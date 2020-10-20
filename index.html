@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    p.log-full-text::before{
+      content: '> ' ;
+    }
+
+    p.log-points::before {
+      content: 'Liczba wszystkich punktów: ';
+    }
+
+    p.log-legs::before {
+      content: 'Liczba nóg wszystkich zwierząt: '
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Zadanie 4.</h1>
+    <label>Wpisz tekst, który ma zostać połączony ze słowem 'something'.</label>
+    <br>
+    <input type="text" class="input-text" placeholder="Wpisz jakiś tekst">
+    <p class="log-full-text"></p>
+  </div>
+
+  <div>
+    <h1>Zadanie 5.</h1>
+    <form class="form-matches">
+      <label>Podaj ilość poszczególnych wyników meczy.</label>
+      <br>
+      <input type="number" class="wins" placeholder="wygrane" min="0">
+      <br>
+      <input type="number" class="draws" placeholder="remisy" min="0">
+      <br>
+      <input type="number" class="losses" placeholder="przegrane" min="0">
+      <br>
+      <input type="submit" value="Oblicz">
+    </form>
+    <p class="log-points" ></p>
+  </div>
+
+  <div>
+    <h1>Zadanie 6.</h1>
+    <form class="form-animals">
+      <label>Podaj ilość poszczególnych zwierząt.</label>
+      <br>
+      <input type="number" class="chickens" placeholder="kurczaki" min="0">
+      <br>
+      <input type="number" class="cows" placeholder="krowy" min="0">
+      <br>
+      <input type="number" class="pigs" placeholder="świnie" min="0">
+      <br>
+      <input type="submit" value="Oblicz">
+    </form>
+    <p class="log-legs" ></p>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
